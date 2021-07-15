@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-
+<title>tunisian student's corner</title>
+	    <link rel="icon" type="image/png" href="logo.png">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -331,7 +332,7 @@
   <p><input type="text" name="Math" id="ma" class="sw-background-color-fbf5ff sw-font-size-s sw-text-color-default sw-font-family-default sw-border-radius-s sw-width-7xs sw-padding-top-5xs sw-padding-bottom-5xs sw-border-style-solid sw-border-width-xs sw-border-color-000000 sw-box-shadow-s sw-margin-bottom-6xs sw-margin-right-5xs sw-display-inline-block sw-padding-left-5xs sw-outline-none" placeholder="Math"></p>
   <p><input type="text" name="Science" id="sc" class="sw-background-color-fbf5ff sw-font-size-s sw-text-color-default sw-font-family-default sw-border-radius-s sw-width-7xs sw-padding-top-5xs sw-padding-bottom-5xs sw-border-style-solid sw-border-width-xs sw-border-color-000000 sw-box-shadow-s sw-margin-bottom-6xs sw-margin-right-5xs sw-display-inline-block sw-padding-left-5xs sw-outline-none" placeholder="SVT"></p>
   <p><input type="text" name="Physique" id="ph" class="sw-background-color-fbf5ff sw-font-size-s sw-text-color-default sw-font-family-default sw-border-radius-s sw-width-7xs sw-padding-top-5xs sw-padding-bottom-5xs sw-border-style-solid sw-border-width-xs sw-border-color-000000 sw-box-shadow-s sw-margin-bottom-6xs sw-margin-right-5xs sw-display-inline-block sw-padding-left-5xs sw-outline-none" placeholder="physique"></p>
-  <p><input type="text" name="Base de donnés" id="inf" class="sw-background-color-fbf5ff sw-font-size-s sw-text-color-default sw-font-family-default sw-border-radius-s sw-width-7xs sw-padding-top-5xs sw-padding-bottom-5xs sw-border-style-solid sw-border-width-xs sw-border-color-000000 sw-box-shadow-s sw-margin-bottom-6xs sw-margin-right-5xs sw-display-inline-block sw-padding-left-5xs sw-outline-none" placeholder="Info"></p>
+  <p><input type="text" name="Info" id="inf" class="sw-background-color-fbf5ff sw-font-size-s sw-text-color-default sw-font-family-default sw-border-radius-s sw-width-7xs sw-padding-top-5xs sw-padding-bottom-5xs sw-border-style-solid sw-border-width-xs sw-border-color-000000 sw-box-shadow-s sw-margin-bottom-6xs sw-margin-right-5xs sw-display-inline-block sw-padding-left-5xs sw-outline-none" placeholder="Info"></p>
   <p><input type="text" name="Sport" id="sp" class="sw-background-color-fbf5ff sw-font-size-s sw-text-color-default sw-font-family-default sw-border-radius-s sw-width-7xs sw-padding-top-5xs sw-padding-bottom-5xs sw-border-style-solid sw-border-width-xs sw-border-color-000000 sw-box-shadow-s sw-margin-bottom-6xs sw-margin-right-5xs sw-display-inline-block sw-padding-left-5xs sw-outline-none" placeholder="Sport"></p>
   <p><input type="text" name="Option" id="op" class="sw-background-color-fbf5ff sw-font-size-s sw-text-color-default sw-font-family-default sw-border-radius-s sw-width-7xs sw-padding-top-5xs sw-padding-bottom-5xs sw-border-style-solid sw-border-width-xs sw-border-color-000000 sw-box-shadow-s sw-margin-bottom-6xs sw-margin-right-5xs sw-display-inline-block sw-padding-left-5xs sw-outline-none" placeholder="Option"></p>  
 <a data-element="button" id="sw-email-capture-submit-btn" onclick="calcul()" class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-semibold sw-border-radius-l sw-background-color-1a91e3 sw-padding-left-2xs sw-padding-right-2xs sw-padding-top-6xs sw-padding-bottom-6xs sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-letter-spacing-normal sw-text-decoration-no-underline hover:sw-text-decoration-no-underline hover:sw-box-shadow-m sw-margin-bottom-6xs sw-margin-right-5xs sw-display-inline-block" href="javascript:void(0);">Valider<div class="spinner-border sw-btn-spinner d-none text-light" role="status"><span class="sr-only">Loading...</span></div><i class="fa fa-fw fa-check d-none" aria-hidden="true"></i></a>
@@ -362,26 +363,29 @@ if ( parseInt(op) >10) {
 x = 0 ;
         
 if ( parseInt(fi) >10) {
-fi = fi
+ fi = fi
 } else 
 fi = 0 ;
+        
 if ( parseInt(fr) >10) {
-fr = fr
+ fr = fr
 } else 
 fr = 0 ;
+        
 if ( parseInt(ar) >10) {
 ar = ar
 } else 
 ar = 0 ;
 if ( parseInt(an) >10) {
-an = an
+ an = an
 } else 
 an = 0 ;
         
 if ( parseInt(ma) >10) {
-ma = ma
+ ma = ma
 } else 
 ma = 0 ;
+        
 if ( parseInt(sc) >10) {
 sc = sc
 } else 
@@ -393,17 +397,17 @@ ph = ph
 ph = 0 ;
         
 if ( parseInt(inf) >10) {
-inf = inf
+ inf = inf
 } else 
 inf = 0 ;
         
 if ( parseInt(sp) >10) {
-sp = sp
+ sp = sp
 } else 
 sp = 0 ;
         
        var sum = ( parseInt(fi) + parseInt(fr) + parseInt(ar) + parseInt(an) + ( parseInt(ma) * 3 ) + ( parseInt(sc) * 4 ) + ( parseInt(ph) * 4 ) + 
-       + parseInt(inf)  + parseInt(sp) + x ) / 16;
+       parseInt(inf)  + parseInt(sp) + x ) / 16;
 
       document.getElementById("result").innerHTML = sum ;
 
