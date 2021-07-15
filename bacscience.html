@@ -346,16 +346,16 @@
     function calcul() {
 
       
-Float fi = document.getElementById("fi").value;
-Float fr = document.getElementById("fr").value;
-Float ar = document.getElementById("ar").value;
-Float an = document.getElementById("an").value;
-Float ma = document.getElementById("ma").value;
-Float sc = document.getElementById("sc").value;
-Float ph = document.getElementById("ph").value;
-Float inf = document.getElementById("inf").value;
-Float sp = document.getElementById("sp").value;
-Float op = document.getElementById("op").value;
+var fi = document.getElementById("fi").value;
+var fr = document.getElementById("fr").value;
+var ar = document.getElementById("ar").value;
+var an = document.getElementById("an").value;
+var ma = document.getElementById("ma").value;
+var sc = document.getElementById("sc").value;
+var ph = document.getElementById("ph").value;
+var inf = document.getElementById("inf").value;
+var sp = document.getElementById("sp").value;
+var op = document.getElementById("op").value;
    
 if ( parseFloat(op) >10) {
   x = parseFloat(op) -10 ;
@@ -406,17 +406,17 @@ if ( parseFloat(sp) >0) {
 } else 
 sp = 0 ;
         
-       Float sum = ( parseFloat(fi) + parseFloat(fr) + parseFloat(ar) + parseFloat(an) + ( parseFloat(ma) * 3 ) + ( parseFloat(sc) * 4 ) + ( parseFloat(ph) * 4 ) + 
+       var sum = ( parseFloat(fi) + parseFloat(fr) + parseFloat(ar) + parseFloat(an) + ( parseFloat(ma) * 3 ) + ( parseFloat(sc) * 4 ) + ( parseFloat(ph) * 4 ) + 
        parseFloat(inf)  + parseFloat(sp) + x ) / 16;
 
       document.getElementById("result").innerHTML = sum ;
 
-      Float sum2 = ( ( sum * 4 ) + parseFloat(ma) + parseFloat(ph) * 1.5 + 
+      var sum2 = ( ( sum * 4 ) + parseFloat(ma) + parseFloat(ph) * 1.5 + 
       parseFloat(sc) * 1.5 + parseFloat(fr) + parseFloat(an) );
 
       document.getElementById("result2").innerHTML = sum2 ;
 
-      Float sum3 = ( ( ( sum2 * 7 ) / 100 ) + sum2 );
+      var sum3 = ( ( ( sum2 * 7 ) / 100 ) + sum2 );
 
       document.getElementById("result3").innerHTML = sum3 ;
 
