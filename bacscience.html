@@ -357,62 +357,62 @@ Float inf = document.getElementById("inf").value;
 Float sp = document.getElementById("sp").value;
 Float op = document.getElementById("op").value;
    
-if ( parseInt(op) >10) {
-  x = parseInt(op) -10 ;
+if ( parseFloat(op) >10) {
+  x = parseFloat(op) -10 ;
 } else 
 x = 0 ;
         
-if ( parseInt(fi) >0) {
+if ( parseFloat(fi) >0) {
  fi = fi
 } else 
 fi = 0 ;
         
-if ( parseInt(fr) >0) {
+if ( parseFloat(fr) >0) {
  fr = fr
 } else 
 fr = 0 ;
         
-if ( parseInt(ar) >0) {
+if ( parseFloat(ar) >0) {
 ar = ar
 } else 
 ar = 0 ;
-if ( parseInt(an) >10) {
+if ( parseFloat(an) >10) {
  an = an
 } else 
 an = 0 ;
         
-if ( parseInt(ma) >0) {
+if ( parseFloat(ma) >0) {
  ma = ma
 } else 
 ma = 0 ;
         
-if ( parseInt(sc) >0) {
+if ( parseFloat(sc) >0) {
 sc = sc
 } else 
 sc = 0 ;
         
-if ( parseInt(ph) >0) {
+if ( parseFloat(ph) >0) {
 ph = ph
 } else 
 ph = 0 ;
         
-if ( parseInt(inf) >0) {
+if ( parseFloat(inf) >0) {
  inf = inf
 } else 
 inf = 0 ;
         
-if ( parseInt(sp) >0) {
+if ( parseFloat(sp) >0) {
  sp = sp
 } else 
 sp = 0 ;
         
-       Float sum = ( parseInt(fi) + parseInt(fr) + parseInt(ar) + parseInt(an) + ( parseInt(ma) * 3 ) + ( parseInt(sc) * 4 ) + ( parseInt(ph) * 4 ) + 
-       parseInt(inf)  + parseInt(sp) + x ) / 16;
+       Float sum = ( parseFloat(fi) + parseFloat(fr) + parseFloat(ar) + parseFloat(an) + ( parseFloat(ma) * 3 ) + ( parseFloat(sc) * 4 ) + ( parseFloat(ph) * 4 ) + 
+       parseFloat(inf)  + parseFloat(sp) + x ) / 16;
 
       document.getElementById("result").innerHTML = sum ;
 
-      Float sum2 = ( ( sum * 4 ) + parseInt(ma) + ( parseInt(ph) * 1.5 ) + 
-      (parseInt(sc) * 1.5 ) + parseInt(fr) + parseInt(an) );
+      Float sum2 = ( ( sum * 4 ) + parseFloat(ma) + parseFloat(ph) * 1.5 + 
+      parseFloat(sc) * 1.5 + parseFloat(fr) + parseFloat(an) );
 
       document.getElementById("result2").innerHTML = sum2 ;
 
