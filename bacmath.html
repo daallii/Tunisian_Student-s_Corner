@@ -332,6 +332,7 @@
   <p><input type="text" name="Anglais" id="an" class="sw-background-color-fbf5ff sw-font-size-s sw-text-color-default sw-font-family-default sw-border-radius-s sw-width-7xs sw-padding-top-5xs sw-padding-bottom-5xs sw-border-style-solid sw-border-width-xs sw-border-color-000000 sw-box-shadow-s sw-margin-bottom-6xs sw-margin-right-5xs sw-display-inline-block sw-padding-left-5xs sw-outline-none" placeholder="Anglais"></p>
   <p><input type="text" name="Math" id="ma" class="sw-background-color-fbf5ff sw-font-size-s sw-text-color-default sw-font-family-default sw-border-radius-s sw-width-7xs sw-padding-top-5xs sw-padding-bottom-5xs sw-border-style-solid sw-border-width-xs sw-border-color-000000 sw-box-shadow-s sw-margin-bottom-6xs sw-margin-right-5xs sw-display-inline-block sw-padding-left-5xs sw-outline-none" placeholder="Math"></p>
   <p><input type="text" name="science" id="sc" class="sw-background-color-fbf5ff sw-font-size-s sw-text-color-default sw-font-family-default sw-border-radius-s sw-width-7xs sw-padding-top-5xs sw-padding-bottom-5xs sw-border-style-solid sw-border-width-xs sw-border-color-000000 sw-box-shadow-s sw-margin-bottom-6xs sw-margin-right-5xs sw-display-inline-block sw-padding-left-5xs sw-outline-none" placeholder="SVT"></p>
+  <p><input type="text" name="Physique" id="ph" class="sw-background-color-fbf5ff sw-font-size-s sw-text-color-default sw-font-family-default sw-border-radius-s sw-width-7xs sw-padding-top-5xs sw-padding-bottom-5xs sw-border-style-solid sw-border-width-xs sw-border-color-000000 sw-box-shadow-s sw-margin-bottom-6xs sw-margin-right-5xs sw-display-inline-block sw-padding-left-5xs sw-outline-none" placeholder="Physique"></p>
   <p><input type="text" name="info" id="inf" class="sw-background-color-fbf5ff sw-font-size-s sw-text-color-default sw-font-family-default sw-border-radius-s sw-width-7xs sw-padding-top-5xs sw-padding-bottom-5xs sw-border-style-solid sw-border-width-xs sw-border-color-000000 sw-box-shadow-s sw-margin-bottom-6xs sw-margin-right-5xs sw-display-inline-block sw-padding-left-5xs sw-outline-none" placeholder="Info"></p>
   <p><input type="text" name="Sport" id="sp" class="sw-background-color-fbf5ff sw-font-size-s sw-text-color-default sw-font-family-default sw-border-radius-s sw-width-7xs sw-padding-top-5xs sw-padding-bottom-5xs sw-border-style-solid sw-border-width-xs sw-border-color-000000 sw-box-shadow-s sw-margin-bottom-6xs sw-margin-right-5xs sw-display-inline-block sw-padding-left-5xs sw-outline-none" placeholder="Sport"></p>
   <p><input type="text" name="Option" id="op" class="sw-background-color-fbf5ff sw-font-size-s sw-text-color-default sw-font-family-default sw-border-radius-s sw-width-7xs sw-padding-top-5xs sw-padding-bottom-5xs sw-border-style-solid sw-border-width-xs sw-border-color-000000 sw-box-shadow-s sw-margin-bottom-6xs sw-margin-right-5xs sw-display-inline-block sw-padding-left-5xs sw-outline-none" placeholder="Option"></p>  
@@ -350,6 +351,7 @@ var fr = document.getElementById("fr").value;
 var ar = document.getElementById("ar").value;
 var an = document.getElementById("an").value;
 var ma = document.getElementById("ma").value;
+var ph = document.getElementById("ph").value;
 var sc = document.getElementById("sc").value;
 var inf = document.getElementById("inf").value;
 var sp = document.getElementById("sp").value;
@@ -359,13 +361,51 @@ if ( parseFloat(op) >10) {
   x = parseFloat(op) -10 ;
 } else 
 x = 0 ;
-       var sum = ( parseFloat(fi) + parseFloat(fr) + parseFloat(ar) + parseFloat(an) + ( parseFloat(ma) * 2 ) + ( parseFloat(ec) * 3 ) + ( parseFloat(ge) * 3 ) + 
-        parseFloat(inf) + ( parseFloat(hi) * 2 ) + parseFloat(sp) + x ) / 16;
+        
+if ( parseFloat(fi) >10) {
+  fi = fi ;
+} else 
+fi = 0 ;
+        if ( parseFloat(fr) >10) {
+  fr = fr ;
+} else 
+fr = 0 ;
+        if ( parseFloat(ar) >10) {
+  ar = ar ;
+} else 
+ar = 0 ;
+        if ( parseFloat(an) >10) {
+  an = an ;
+} else 
+an = 0 ;
+        if ( parseFloat(ma) >10) {
+  ma = ma ;
+} else 
+ma = 0 ;
+        if ( parseFloat(sc) >10) {
+  sc = sc ;
+} else 
+sc = 0 ;
+        if ( parseFloat(ph) >10) {
+  ph = ph ;
+} else 
+ph = 0 ;
+        if ( parseFloat(inf) >10) {
+  inf = inf ;
+} else 
+inf = 0 ;
+        if ( parseFloat(sp) >10) {
+  sp = sp ;
+} else 
+sp = 0 ;
+        
+       var sum = ( parseFloat(fi) + parseFloat(fr) + parseFloat(ar) + parseFloat(an) + ( parseFloat(ma) * 4 ) + ( parseFloat(sc) * 2 ) + ( parseFloat(ph) * 4 ) + 
+        parseFloat(inf) + parseFloat(sp) + x ) / 16;
 
       document.getElementById("result").innerHTML = sum ;
 
-      var sum2 = ( ( sum * 4 ) + ( parseFloat(ma) * 1.5 ) + ( parseFloat(pr) * 1.5 ) + 
-      (parseFloat(ph) * 0.5 ) + ( ( parseFloat(ti) + parseFloat(ba) ) * 0.25 ) + parseFloat(fr) + parseFloat(an) );
+      var sum2 = ( ( sum * 4 ) + ( parseFloat(ma) * 2 ) + ( parseFloat(ph) * 1.5 ) + 
+      (parseFloat(sc) * 0.5 ) + parseFloat(fr) + parseFloat(an) );
 
       document.getElementById("result2").innerHTML = sum2 ;
 
