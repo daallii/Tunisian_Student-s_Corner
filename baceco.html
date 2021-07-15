@@ -363,19 +363,23 @@ if ( parseFloat(op) >10) {
   x = parseFloat(op) -10 ;
 } else 
 x = 0 ;
-        if ( parseFloat(fi) >0) {
+        
+if ( parseFloat(fi) >0) {
 fi = fi ;
         } else 
 fi = 0 ;
-        if ( parseFloat(fr) >0) {
+        
+if ( parseFloat(fr) >0) {
 fr = fr ;
         } else 
 fr = 0 ;
-        if ( parseFloat(ar) >0) {
+        
+if ( parseFloat(ar) >0) {
 ar = ar ;
         } else 
 ar = 0 ;
-        if ( parseFloat(an) >0) {
+        
+if ( parseFloat(an) >0) {
 an = an ;
         } else 
 an = 0 ;
@@ -383,26 +387,31 @@ an = 0 ;
 ma = ma ;
         } else 
 ma = 0 ;
-        if ( parseFloat(ec) >0) {
+        
+if ( parseFloat(ec) >0) {
 ec = ec ;
         } else 
 ec = 0 ;
-        if ( parseFloat(ge) >0) {
+        
+if ( parseFloat(ge) >0) {
 ge = ge ;
         } else 
 ge = 0 ;
-        if ( parseFloat(inf) >0) {
+if ( parseFloat(inf) >0) {
 inf = inf ;
         } else 
 inf = 0 ;
-        if ( parseFloat(hi) >0) {
+        
+if ( parseFloat(hi) >0) {
 hi = hi ;
         } else 
 hi = 0 ;
-        if ( parseFloat(sp) >0) {
+        
+if ( parseFloat(sp) >0) {
 sp = sp ;
         } else 
 sp = 0 ;
+        
        var sum = ( parseFloat(fi) + parseFloat(fr) + parseFloat(ar) + parseFloat(an) + ( parseFloat(ma) * 2 ) + ( parseFloat(ec) * 3 ) + ( parseFloat(ge) * 3 ) + 
         parseFloat(inf) + ( parseFloat(hi) * 2 ) + parseFloat(sp) + x ) / 16;
 
