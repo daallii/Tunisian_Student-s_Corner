@@ -412,8 +412,12 @@ if ( parseFloat(inf) >0) {
  inf = inf ;
 } else 
 inf = 0 ;
-       var sum = ( parseFloat(fi) + parseFloat(fr) + parseFloat(ar) + parseFloat(an) + ( parseFloat(ph) * 3 ) + ( parseFloat(te) * 4 ) + 
-        ( parseFloat(ma) * 3 ) + parseFloat(tp) + parseFloat(inf) + x ) / 16;
+	    if ( parseFloat(sp) >0) {
+  sp = sp ;
+} else 
+sp = 0 ;
+       var sum = ( parseFloat(fi) + parseFloat(fr) + parseFloat(ar) + parseFloat(an) + ( parseFloat(ph) * 3 ) + ( parseFloat(te) * 3 ) + 
+        ( parseFloat(ma) * 3 ) + parseFloat(tp) + parseFloat(inf) + parseFloat(sp) + x ) / 16;
 
       document.getElementById("result").innerHTML = sum ;
 
